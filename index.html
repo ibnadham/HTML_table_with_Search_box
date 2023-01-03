@@ -11,46 +11,51 @@
     <div class="wrapper">
       <h2>Search Table Content</h2>
       <form class="example" action="">
-        <input type="text" placeholder="Search.." name="search" />
-        <button type="submit"><i class="fa fa-search"></i></button>
+        <input
+          type="text"
+          id="searchItem"
+          placeholder="Type to search"
+          name=""
+          onkeyup="search()"
+        />
       </form>
-      <table>
+      <table class="table_content" id="table_content">
         <tr>
           <th>Name</th>
           <th>Date of birth</th>
           <th>Place of birth</th>
         </tr>
-        <tr>
+        <tr class="content">
           <td>Nick</td>
           <td>1999</td>
           <td>Ohio</td>
         </tr>
-        <tr>
+        <tr class="content">
           <td>Jack</td>
           <td>2001</td>
           <td>Alabama</td>
         </tr>
-        <tr>
+        <tr class="content">
           <td>Anna</td>
           <td>1980</td>
           <td>Colorado</td>
         </tr>
-        <tr>
+        <tr class="content">
           <td>John</td>
           <td>1974</td>
           <td>Ohio</td>
         </tr>
-        <tr>
+        <tr class="content">
           <td>Nicole</td>
           <td>2000</td>
           <td>Texas</td>
         </tr>
-        <tr>
+        <tr class="content">
           <td>Jackson</td>
           <td>2000</td>
           <td>Texas</td>
         </tr>
-        <tr>
+        <tr class="content">
           <td>Nick</td>
           <td>1991</td>
           <td>New York</td>
