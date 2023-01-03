@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aquamarine;
+}
+.wrapper {
+  margin: 10% 20% 0;
+  padding: 30px 20px;
+  background-color: #fff;
+}
+.example {
+  margin: 10px 0px 10px 0px;
+}
+input {
+  width: 100%;
+  padding: 8px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid;
+  text-align: left;
+  padding: 8px;
+  color: rgb(121, 117, 117);
+}
+th {
+  background-color: rgb(143, 48, 48);
+  color: #fff;
+}
