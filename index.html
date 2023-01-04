@@ -5,62 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,500;0,600;0,700;1,400&family=Open+Sans:wght@300&family=Poppins:wght@200;300;400;500;600&family=Roboto:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
     <div class="wrapper">
-      <h2>Search Table Content</h2>
-      <form class="example" action="">
-        <input
-          type="text"
-          id="searchItem"
-          placeholder="Type to search"
-          name=""
-          onkeyup="search()"
-        />
-      </form>
+      <div class="header">
+        <h2>Search Table Content</h2>
+        <form class="example" action="">
+          <input
+            type="text"
+            id="searchItem"
+            placeholder="Type to search"
+            name=""
+            onkeyup="search()"
+          />
+        </form>
+      </div>
+      <div class="items-controller">
+        <h5>Show</h5>
+        <select name="" id="itemperpage">
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="08" selected>08</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+        <h5>Per Page</h5>
+      </div>
       <table class="table_content" id="table_content">
-        <tr>
-          <th>Name</th>
-          <th>Date of birth</th>
-          <th>Place of birth</th>
-        </tr>
-        <tr class="content">
-          <td>Nick</td>
-          <td>1999</td>
-          <td>Ohio</td>
-        </tr>
-        <tr class="content">
-          <td>Jack</td>
-          <td>2001</td>
-          <td>Alabama</td>
-        </tr>
-        <tr class="content">
-          <td>Anna</td>
-          <td>1980</td>
-          <td>Colorado</td>
-        </tr>
-        <tr class="content">
-          <td>John</td>
-          <td>1974</td>
-          <td>Ohio</td>
-        </tr>
-        <tr class="content">
-          <td>Nicole</td>
-          <td>2000</td>
-          <td>Texas</td>
-        </tr>
-        <tr class="content">
-          <td>Jackson</td>
-          <td>2000</td>
-          <td>Texas</td>
-        </tr>
-        <tr class="content">
-          <td>Nick</td>
-          <td>1991</td>
-          <td>New York</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Date of birth</th>
+            <th>Place of birth</th>
+            <th>Citizen</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="content">
+            <td>Nick</td>
+            <td>1999</td>
+            <td>Ohio</td>
+            <td>Usa</td>
+          </tr>
+          <tr class="content">
+            <td>Jack</td>
+            <td>2001</td>
+            <td>Alabama</td>
+            <td>Usa</td>
+          </tr>
+          <tr class="content">
+            <td>Anna</td>
+            <td>1980</td>
+            <td>Moscow</td>
+            <td>Russia</td>
+          </tr>
+          <tr class="content">
+            <td>John</td>
+            <td>1974</td>
+            <td>Ohio</td>
+            <td>Usa</td>
+          </tr>
+          <tr class="content">
+            <td>Nina</td>
+            <td>2000</td>
+            <td>Sofia</td>
+            <td>Bulgaria</td>
+          </tr>
+          <tr class="content">
+            <td>Jackson</td>
+            <td>2000</td>
+            <td>Texas</td>
+            <td>Usa</td>
+          </tr>
+          <tr class="content">
+            <td>Nick</td>
+            <td>1991</td>
+            <td>New York</td>
+            <td>Usa</td>
+          </tr>
+        </tbody>
       </table>
+      <div class="bottom-field">
+        <ul class="pagination">
+          <li class="prev"><a href="#" id="prev">&#139;</a></li>
+          <!-- page number here -->
+          <li class="next"><a href="#" id="next">&#155;</a></li>
+        </ul>
+      </div>
     </div>
     <script src="all.js"></script>
   </body>
