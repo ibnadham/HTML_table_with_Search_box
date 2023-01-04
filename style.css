@@ -2,38 +2,126 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Arimo";
 }
 
+/* Global */
+.pagination,
+.header,
+.items-controller {
+  display: flex;
+}
+
+.header,
+th {
+  padding: 20px;
+}
+.pagination,
+.items-controller {
+  align-items: center;
+}
+input,
+td,
+th,
+.items-controller,
+select,
+.pagination li {
+  color: rgb(121, 117, 117);
+}
+.items-controller,
+.table_content {
+  width: 90%;
+}
+.pagination li,
+input {
+  border-radius: 5px;
+}
+.pagination li,
+td,
+th {
+  border: 1px solid rgb(121, 117, 117);
+}
+.pagination li.active,
+.header {
+  color: #fff;
+}
 body {
-  background-color: aquamarine;
+  background-color: rgb(190, 252, 231);
 }
 .wrapper {
-  margin: 10% 20% 0;
-  padding: 30px 20px;
+  margin: 20px 20px;
   background-color: #fff;
 }
-.example {
-  margin: 10px 0px 10px 0px;
-}
-input {
-  width: 100%;
-  padding: 8px;
+.header {
+  justify-content: space-between;
+  margin: 10px 0 10px 0;
+
+  background-color: #435d7d;
 }
 
-table {
-  font-family: arial, sans-serif;
+h2 {
+  margin-left: 3rem;
+}
+
+input {
+  width: 20rem;
+  padding: 10px;
+
+  outline: none;
+  border-style: none;
+}
+
+.table_content {
   border-collapse: collapse;
-  width: 100%;
+  margin-left: 5%;
 }
 
 td,
 th {
-  border: 1px solid;
-  text-align: left;
-  padding: 8px;
-  color: rgb(121, 117, 117);
+  text-align: start;
+
+  border-left: none;
+  border-right: none;
+  font-size: 20px;
 }
 th {
-  background-color: rgb(143, 48, 48);
-  color: #fff;
+  font-weight: bold;
+}
+td {
+  padding: 30px;
+  font-weight: 600;
+}
+.pagination {
+  justify-content: center;
+  margin-top: 20px;
+}
+.pagination li {
+  list-style: none;
+  padding: 2px;
+  margin: 10px;
+  flex-shrink: 0;
+  text-align: center;
+}
+.pagination li.active {
+  background: #32d6aa;
+  border-color: #32d6aa;
+}
+.pagination li a {
+  text-decoration: none;
+  padding: 3px 8px;
+  color: inherit;
+  display: block;
+  font-size: 13px;
+}
+select {
+  padding: 2px;
+  margin: 0 10px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+.items-controller {
+  height: 100px;
+  margin: auto;
+  align-content: center;
 }
